@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                     http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ru.pluggable.main</groupId>
+  <artifactId>pluggable</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0.0</version>
+  <name>MultiModule application</name>
+
+    <properties>
+        <maven.test.skip>true</maven.test.skip>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+  
+    <modules>
+		<module>plugin-loader</module>
+        <module>hello-plugin1</module>
+        <module>hello-plugin2</module>
+        <module>plugin</module>
+    </modules>
+  
+</project>
